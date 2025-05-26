@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  ...
+  <link href="https://fonts.google.com/specimen/Red+Hat+Display" rel="stylesheet">
+
+
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+html, body{
+	margin:0;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #f0f4ff;
+	font-family:'Red Hat Display',sans-serif;
+	flex-direction: column;
+font-weight: 700;
+}
+
+.container{
+background:white;
+border-radius: 14px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+display:flex;
+
+align-items: center;
+flex-direction:column;
+width:300px;
+padding: 20px;
+margin: 50px auto 0;
+}
+
+
+
+#image-front{
+	width:100%;
+	height: auto;
+	border-radius:14px 14px 0 0;
+}
+.container h1{
+	font-size:2rem;
+	color:hsl(223, 47%, 23%);
+	margin-bottom: 10px;
+}
+.container p{
+	text-align:center;
+ 	color: hsl(224, 23%, 55%);
+	font-size:16px;
+}
+
+.plan-info{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+gap:2px;
+margin-left:10px;
+margin-right: 0;
+}
+.proceed{
+display:flex;
+flex-direction:column;
+width:100%;
+align-items:center;
+gap:4px;
+
+}
+.plan-info p{
+	margin:0;
+        font-size:16px;
+
+}
+
+
+
+.button1{
+font-size: 1rem;
+   width: 300px;
+background-color:blue;
+color:white;
+padding:10px;
+border-radius: 12px;
+cursor: pointer;
+
+}
+.button2{
+	width:300px;
+	background-color:white;
+	color:hsl(224, 23%, 55%);
+	border:none;
+	
+}
+.plan-left{
+display:flex;
+align-items:center;
+}
+.plan{
+background-color: #fff;
+width:100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:10px;
+margin:20px 0;
+}
+.annual{
+color:hsl(223, 47%, 23%);
+}
+.money{
+color:hsl(224, 23%, 55%);
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <div class = "container">
+<img src = "./images/illustration-hero.svg" alt="Illustration of a person listening to music" class="hero-image"
+id="image-front">
+
+ 
+
+<h1>Order Summary</h1>
+<p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+</div>
+
+
+<div class= "plan">
+<div class = "plan-left">
+<img src="./images/icon-music.svg" alt="Music Icon" class="music-icon" height = "50" width ="50">
+
+<div class = "plan-info">
+<p class = "annual">Annual Plan</p>
+<p class = "money"> $59.99/year</p>
+</div>
+</div>
+<p><a href="#">Change</a></p>
+</div> 
+
+
+ <div class = "proceed">
+<button class = "button1">Proceed to Payment</button>
+<button class = "button2">Cancel Order</button>
+</div>
+</div>
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">James Brignoli</a>.
+  </div>
+
+</body>
+</html>
